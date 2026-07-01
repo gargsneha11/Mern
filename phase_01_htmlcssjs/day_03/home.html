@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 10px;
+        padding: 10px;
+        margin-left: 40px;
+        
+    }
+    button{
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
+</style>
+<body>
+    
+    <form action="">
+        <label for="">Name:</label>
+        <input type="text" id="name" placeholder="Enter the name">
+        
+        <label for="">Email:</label>
+        <input type="text" id="email" placeholder="Enter the email">
+        
+        <label for="">Age:</label>
+        <input type="text" id="age" placeholder="Enter the age">
+        <button>Submit</button>
+    </form>
+
+    <div>
+        <h1>Students data</h1>
+    
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        <tbody id="container">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+        
+    </table>
+    </div>
+
+</body>
+</html>
+<script>
+
+    var name1=document.getElementById("name")
+    var email=document.getElementById("email")
+    var age=document.getElementById("age")
+
+    var input=name.value
+    var input1=name.email
+    var input2=name.age
+
+    var btn=document.querySelector("button")
+    btn.addEventListener("click",handleClick)
+
+    function handleClick(event){
+        event.preventDefault()
+        alert("button is clicked")
+        var id=document.getElementById("container")
+        id.innerHTML+=`
+        <tr>
+            <td>${name1.value}</td>
+            <td>${email.value}</td>
+            <td>${age.value}</td>
+            </tr>
+        
+        `
+        
+      name1.value=""
+      email.value=""
+      age.value=""
+
+    }
+
+
+
+</script>

@@ -1,0 +1,44 @@
+
+#container{
+    border: 2px solid black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#formDiv {
+    border: 2px solid rgb(158, 112, 112);
+    height: 200px;
+    width: 30%;
+    padding: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+#formDiv div{
+    display: flex;
+    flex-direction: column;
+}
+#cardDiv{
+    border: 2px solid red;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+button{
+    padding: 5px;
+    background-color: rgb(220, 214, 214);
+}
+img{
+    
+    height: 200px;
+    width: 120px;
+}
+.card{
+    border: 1px solid black;
+    width: 30%;
+    padding: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+
+}
